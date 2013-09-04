@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2133DBE317D645820010B90F /* LoginXIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2133DBE117D645820010B90F /* LoginXIBViewController.m */; };
+		2133DBE417D645820010B90F /* LoginXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2133DBE217D645820010B90F /* LoginXIBViewController.xib */; };
+		2133DBE717D64D230010B90F /* ModalViewsControllerMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2133DBE617D64D230010B90F /* ModalViewsControllerMananger.m */; };
+		2133DBEB17D64DB60010B90F /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2133DBE917D64DB50010B90F /* ForgotPasswordViewController.m */; };
+		2133DBEC17D64DB60010B90F /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2133DBEA17D64DB50010B90F /* ForgotPasswordViewController.xib */; };
+		2133DBF017D64DC70010B90F /* NewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2133DBEE17D64DC60010B90F /* NewUserViewController.m */; };
+		2133DBF117D64DC70010B90F /* NewUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2133DBEF17D64DC70010B90F /* NewUserViewController.xib */; };
 		21FFC1D117C7F39B00AFFD92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FFC1D017C7F39B00AFFD92 /* UIKit.framework */; };
 		21FFC1D317C7F39B00AFFD92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FFC1D217C7F39B00AFFD92 /* Foundation.framework */; };
 		21FFC1D517C7F39B00AFFD92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FFC1D417C7F39B00AFFD92 /* CoreGraphics.framework */; };
@@ -43,9 +50,6 @@
 		DC702BFD17C83CC700388E87 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC702BFC17C83CC700388E87 /* Security.framework */; };
 		DC702C0017C845E100388E87 /* NSURLConnectionWithTag.m in Sources */ = {isa = PBXBuildFile; fileRef = DC702BFF17C845E100388E87 /* NSURLConnectionWithTag.m */; };
 		DC702C0417C870AC00388E87 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = DC702C0317C870AC00388E87 /* Location.m */; };
-		DC702C0717C870BB00388E87 /* Code.m in Sources */ = {isa = PBXBuildFile; fileRef = DC702C0617C870BB00388E87 /* Code.m */; };
-		DC702C0A17C870CC00388E87 /* Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = DC702C0917C870CC00388E87 /* Attributes.m */; };
-		DC702C0D17C870DB00388E87 /* History.m in Sources */ = {isa = PBXBuildFile; fileRef = DC702C0C17C870DB00388E87 /* History.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2133DBE017D645820010B90F /* LoginXIBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginXIBViewController.h; path = "Item Mapper/LoginXIBViewController.h"; sourceTree = "<group>"; };
+		2133DBE117D645820010B90F /* LoginXIBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginXIBViewController.m; path = "Item Mapper/LoginXIBViewController.m"; sourceTree = "<group>"; };
+		2133DBE217D645820010B90F /* LoginXIBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginXIBViewController.xib; path = "Item Mapper/LoginXIBViewController.xib"; sourceTree = "<group>"; };
+		2133DBE517D64D230010B90F /* ModalViewsControllerMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModalViewsControllerMananger.h; path = "Item Mapper/ModalViewsControllerMananger.h"; sourceTree = "<group>"; };
+		2133DBE617D64D230010B90F /* ModalViewsControllerMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModalViewsControllerMananger.m; path = "Item Mapper/ModalViewsControllerMananger.m"; sourceTree = "<group>"; };
+		2133DBE817D64DB50010B90F /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForgotPasswordViewController.h; path = "Item Mapper/ForgotPasswordViewController.h"; sourceTree = "<group>"; };
+		2133DBE917D64DB50010B90F /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForgotPasswordViewController.m; path = "Item Mapper/ForgotPasswordViewController.m"; sourceTree = "<group>"; };
+		2133DBEA17D64DB50010B90F /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ForgotPasswordViewController.xib; path = "Item Mapper/ForgotPasswordViewController.xib"; sourceTree = "<group>"; };
+		2133DBED17D64DC60010B90F /* NewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewUserViewController.h; path = "Item Mapper/NewUserViewController.h"; sourceTree = "<group>"; };
+		2133DBEE17D64DC60010B90F /* NewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewUserViewController.m; path = "Item Mapper/NewUserViewController.m"; sourceTree = "<group>"; };
+		2133DBEF17D64DC70010B90F /* NewUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewUserViewController.xib; path = "Item Mapper/NewUserViewController.xib"; sourceTree = "<group>"; };
 		21FFC1CD17C7F39B00AFFD92 /* Item Mapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Item Mapper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FFC1D017C7F39B00AFFD92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		21FFC1D217C7F39B00AFFD92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -113,12 +128,6 @@
 		DC702BFF17C845E100388E87 /* NSURLConnectionWithTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionWithTag.m; sourceTree = "<group>"; };
 		DC702C0217C870AC00388E87 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = "Item Mapper/Location.h"; sourceTree = "<group>"; };
 		DC702C0317C870AC00388E87 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = "Item Mapper/Location.m"; sourceTree = "<group>"; };
-		DC702C0517C870BB00388E87 /* Code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Code.h; path = "Item Mapper/Code.h"; sourceTree = "<group>"; };
-		DC702C0617C870BB00388E87 /* Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Code.m; path = "Item Mapper/Code.m"; sourceTree = "<group>"; };
-		DC702C0817C870CC00388E87 /* Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Attributes.h; path = "Item Mapper/Attributes.h"; sourceTree = "<group>"; };
-		DC702C0917C870CC00388E87 /* Attributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Attributes.m; path = "Item Mapper/Attributes.m"; sourceTree = "<group>"; };
-		DC702C0B17C870DB00388E87 /* History.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = History.h; path = "Item Mapper/History.h"; sourceTree = "<group>"; };
-		DC702C0C17C870DB00388E87 /* History.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = History.m; path = "Item Mapper/History.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +253,15 @@
 				21FFC22317C7FF0E00AFFD92 /* MyItemsNavViewController.m */,
 				DC702BF417C832EF00388E87 /* LoginViewController.h */,
 				DC702BF517C832EF00388E87 /* LoginViewController.m */,
+				2133DBE017D645820010B90F /* LoginXIBViewController.h */,
+				2133DBE117D645820010B90F /* LoginXIBViewController.m */,
+				2133DBE217D645820010B90F /* LoginXIBViewController.xib */,
+				2133DBE817D64DB50010B90F /* ForgotPasswordViewController.h */,
+				2133DBE917D64DB50010B90F /* ForgotPasswordViewController.m */,
+				2133DBEA17D64DB50010B90F /* ForgotPasswordViewController.xib */,
+				2133DBED17D64DC60010B90F /* NewUserViewController.h */,
+				2133DBEE17D64DC60010B90F /* NewUserViewController.m */,
+				2133DBEF17D64DC70010B90F /* NewUserViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -265,6 +283,8 @@
 				DC702BE417C8112B00388E87 /* DataManager.m */,
 				DC702BED17C81D4800388E87 /* UserManager.h */,
 				DC702BEE17C81D4800388E87 /* UserManager.m */,
+				2133DBE517D64D230010B90F /* ModalViewsControllerMananger.h */,
+				2133DBE617D64D230010B90F /* ModalViewsControllerMananger.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -300,12 +320,6 @@
 				DC702BE817C813EA00388E87 /* Item.m */,
 				DC702C0217C870AC00388E87 /* Location.h */,
 				DC702C0317C870AC00388E87 /* Location.m */,
-				DC702C0517C870BB00388E87 /* Code.h */,
-				DC702C0617C870BB00388E87 /* Code.m */,
-				DC702C0817C870CC00388E87 /* Attributes.h */,
-				DC702C0917C870CC00388E87 /* Attributes.m */,
-				DC702C0B17C870DB00388E87 /* History.h */,
-				DC702C0C17C870DB00388E87 /* History.m */,
 			);
 			name = item;
 			sourceTree = "<group>";
@@ -388,6 +402,9 @@
 				21FFC21C17C7FAA900AFFD92 /* mapIcon.png in Resources */,
 				21FFC21F17C7FC2400AFFD92 /* settingsIcon.png in Resources */,
 				21FFC22117C7FC9900AFFD92 /* listIcon.png in Resources */,
+				2133DBE417D645820010B90F /* LoginXIBViewController.xib in Resources */,
+				2133DBEC17D64DB60010B90F /* ForgotPasswordViewController.xib in Resources */,
+				2133DBF117D64DC70010B90F /* NewUserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,9 +457,10 @@
 				DC702BFB17C83BD400388E87 /* ClassAdditions.m in Sources */,
 				DC702C0017C845E100388E87 /* NSURLConnectionWithTag.m in Sources */,
 				DC702C0417C870AC00388E87 /* Location.m in Sources */,
-				DC702C0717C870BB00388E87 /* Code.m in Sources */,
-				DC702C0A17C870CC00388E87 /* Attributes.m in Sources */,
-				DC702C0D17C870DB00388E87 /* History.m in Sources */,
+				2133DBE317D645820010B90F /* LoginXIBViewController.m in Sources */,
+				2133DBE717D64D230010B90F /* ModalViewsControllerMananger.m in Sources */,
+				2133DBEB17D64DB60010B90F /* ForgotPasswordViewController.m in Sources */,
+				2133DBF017D64DC70010B90F /* NewUserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

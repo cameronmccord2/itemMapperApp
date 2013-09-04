@@ -13,37 +13,43 @@
 @synthesize type;
 @synthesize longitude;
 @synthesize latitude;
-@synthesize who;
-@synthesize when;
+@synthesize userId;
+@synthesize itemId;
+@synthesize created;
+@synthesize locationId;
 
 NSString *keyType = @"type";
 NSString *keyLongitude = @"longitude";
 NSString *keyLatitude = @"latitude";
-NSString *keyWho = @"who";
-NSString *keyWhen = @"when";
+NSString *keyUserId = @"userId";
+NSString *keyCreated = @"created";
+NSString *keyItemId = @"itemId";
+NSString *keyLocationId = @"id";
 
--(id)initWithDictionary:(NSDictionary *)dictionary{
-    self = [super init];
-    if (self) {
-        self.type = [dictionary objectForKey:keyType];
-        self.longitude = [dictionary objectForKey:keyLongitude];
-        self.latitude = [dictionary objectForKey:keyLatitude];
-        self.who = [dictionary objectForKey:keyWho];
-        self.when = [NSDate dateWithTimeIntervalSince1970:[[dictionary objectForKey:keyWhen]intValue]];
-    }
-    return self;
++(id)createWithDictionary:(NSDictionary *)dictionary{
+    return [[Location alloc] initWithType:[dictionary[keyType] integerValue] longitude:dictionary[keyLongitude] latitude:dictionary[keyLatitude] userId:[dictionary[keyUserId] integerValue] locationId:[dictionary[keyLocationId] integerValue] itemId:[dictionary[keyItemId] integerValue] created:dictionary[keyCreated]];
 }
 
--(id)initWithType:(NSString *)type longitude:(NSString *)longitude latitude:(NSString *)latitude who:(NSString *)who when:(NSDate *)when{
+-(id)initWithType:(NSInteger)type longitude:(NSString *)longitude latitude:(NSString *)latitude userId:(NSInteger)userId locationId:(NSInteger)locationId itemId:(NSInteger)itemId created:(NSDate *)created{
     self = [super init];
     if (self) {
         self.type = type;
         self.longitude = longitude;
         self.latitude = latitude;
-        self.who = who;
-        self.when = when;
+        self.userId = userId;
+        self.itemId = itemId;
+        self.locationId = locationId;
+        self.created = created;
     }
     return self;
+}
+
++(NSArray *)parseList:(NSArray *)array{
+    NSMutableArray *locations = [[NSMutableArray alloc] initWithCapacity:array.count];
+    for (NSDictionary *d in array) {
+        [locations addObject:[Location createWithDictionary:d]];
+    }
+    return locations;
 }
 
 @end

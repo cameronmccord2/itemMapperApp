@@ -10,12 +10,17 @@
 
 @interface Location : NSObject
 
-@property(nonatomic, strong)NSString *type;
+@property(nonatomic)NSInteger type;
 @property(nonatomic, strong)NSString *longitude;
 @property(nonatomic, strong)NSString *latitude;
-@property(nonatomic, strong)NSString *who;
-@property(nonatomic, strong)NSDate *when;
+@property(nonatomic)NSInteger userId;
+@property(nonatomic, strong)NSDate *created;
+@property(nonatomic)NSInteger locationId;
+@property(nonatomic)NSInteger itemId;
 
--(id)initWithDictionary:(NSDictionary *)dictionary;
--(id)initWithType:(NSString *)type longitude:(NSString *)longitude latitude:(NSString *)latitude who:(NSString *)who when:(NSDate *)when;
++(id)createWithDictionary:(NSDictionary *)dictionary;
++(NSArray *)parseList:(NSArray *)array;
+
+-(id)initWithType:(NSInteger)type longitude:(NSString *)longitude latitude:(NSString *)latitude userId:(NSInteger)userId locationId:(NSInteger)locationId itemId:(NSInteger)itemId created:(NSDate *)created;
+
 @end

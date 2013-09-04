@@ -14,15 +14,15 @@
 
 -(BOOL)hasToken;
 -(NSString *)getToken;
--(BOOL)setToken;
+-(BOOL)setToken:(NSString *)newToken;
 -(BOOL)deleteToken;
 -(BOOL)hasUsername;
 -(NSString *)getUsername;
--(BOOL)setUsername;
+-(BOOL)setUsername:(NSString *)newUsername;
 -(BOOL)deleteUsername;
 -(BOOL)hasPassword;
 -(NSString *)getPassword;
--(BOOL)setPassword;
+-(BOOL)setPassword:(NSString *)newPassword;
 -(BOOL)deletePassword;
 -(BOOL)deleteEverything;
 

@@ -8,19 +8,22 @@
 
 #import "DataManager.h"
 #import "UserManager.h"
-#import "LoginViewController.h"
-#import "CallQueue.h"
 #import "ClassAdditions.m"
 #import "NSURLConnectionWithTag.h"
+#import "ModalViewsControllerMananger.h"
 
 @implementation DataManager
+
+@synthesize loginController;
+@synthesize authCall;
 
 NSString *baseUrl = @"http://localhost:8909/map/";
 NSString *itemsUrl = @"items";
 NSString *editItemUrl = @"items/";
 NSString *newItemUrl = @"items";
 NSString *itemExistsUrl = @"items/exists";
-NSNumber *typeMyItems, *typeDoesItemExist;
+NSString *loginUrl = @"users/login";
+NSNumber *typeMyItems, *typeDoesItemExist, *typeAuthenticate;
 
 
 +(DataManager *)sharedManager{
@@ -37,6 +40,8 @@ NSNumber *typeMyItems, *typeDoesItemExist;
 -(void)extraInit{
     connectionNumber = [NSDecimalNumber one];
     typeMyItems = [NSNumber numberWithInt:1];
+    typeAuthenticate = [NSNumber numberWithInt:2];
+    typeDoesItemExist = [NSNumber numberWithInt:3];
 }
 
 -(void)doesItemExistByCode:(NSString *)code delegate:(id)delegate{
@@ -66,28 +71,38 @@ NSNumber *typeMyItems, *typeDoesItemExist;
         if ([[UserManager sharedManager] hasPassword]) {
             [self autoAuthenticate];
         }else{
-            [self makeLogin];
+            [self makeLoginView];
         }
     }else{
-        [self makeLogin];
+        [self makeLoginView];
     }
 }
 
--(void)makeLogin{
-    LoginViewController *lvc = [[LoginViewController alloc] initWithNibName:nil bundle:nil];
-    
+// Login stuff
+-(void)makeLoginView{
+    [[ModalViewsControllerMananger sharedManager] loadLoginView];
 }
 
 -(void)autoAuthenticate{
     
 }
 
--(void)loginCall{
-    
+-(void)loginWithEmail:(NSString *)email password:(NSString *)password delegate:(id)delegate{
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", baseUrl, loginUrl]];
+    url = [url URLByAppendingQueryStringKey:@"email" value:email];
+    url = [url URLByAppendingQueryStringKey:@"password" value:password];
+    authCall = [[CallQueue alloc] initQueueItem:url type:typeAuthenticate delegate:delegate];
+    [self doFetchQueue];
 }
 
+// Queue stuff
 -(void)doFetchQueue{
-    if (callQueue.count != 0) {
+    if (authCall) {
+        if (!authCall.alreadySent) {
+            authCall.alreadySent = YES;
+            [self doRequest:authCall.fullUrl forType:authCall.type finalDelegate:authCall.delegate];
+        }
+    }else if (callQueue.count != 0) {
         for (CallQueue *cq in callQueue) {
             if (!cq.alreadySent) {
                 [self doRequest:cq.fullUrl forType:cq.type finalDelegate:cq.delegate];
@@ -114,11 +129,14 @@ NSNumber *typeMyItems, *typeDoesItemExist;
     }
 }
 
+// TODO connection needs to store the final delegate******************************************************************************************************************************
 -(void)connectionDidFinishLoading:(NSURLConnectionWithTag *)conn{
     if ([dataFromConnectionByTag objectForKey:conn.uniqueTag]) {
         if ([conn.typeTag isEqualToNumber:typeMyItems]) {// history, code, attributes, location
             // parse my items and return it to delegate
         }else if([conn.typeTag isEqualToNumber:typeDoesItemExist]){// history, code, attributes
+            // parse and return
+        }else if([conn.typeTag isEqualToNumber:typeAuthenticate]){// token:id, token, userId, created, type, status
             // parse and return
         }
     }else
@@ -130,11 +148,13 @@ NSNumber *typeMyItems, *typeDoesItemExist;
 }
 
 -(void)connection:(NSURLConnectionWithTag *)conn didFailWithError:(NSError *)error{
-    NSString *errorString = [NSString stringWithFormat:@"Fetch for senior audio stuff failed for url: %@, error: %@", conn.originalRequest.URL.absoluteString, [error localizedDescription]];
+    if (conn.typeTag isEqualToNumber:typeAuthenticate) {
+        conn.
+    }
+    NSString *errorString = [NSString stringWithFormat:@"Fetch  failed for url: %@, error: %@", conn.originalRequest.URL.absoluteString, [error localizedDescription]];
     UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [av show];
 }
-// Other additions
 @end
 
 

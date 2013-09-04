@@ -1,20 +1,18 @@
 //
-//  MainNavViewController.m
+//  NewUserViewController.m
 //  Item Mapper
 //
-//  Created by Taylor McCord on 8/23/13.
+//  Created by Taylor McCord on 9/3/13.
 //  Copyright (c) 2013 McCord Inc. All rights reserved.
 //
 
-#import "MainNavViewController.h"
+#import "NewUserViewController.h"
 
-@interface MainNavViewController ()
+@interface NewUserViewController ()
 
 @end
 
-@implementation MainNavViewController
-
-
+@implementation NewUserViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning
