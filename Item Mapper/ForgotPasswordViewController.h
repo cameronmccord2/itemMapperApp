@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataManager.h"
 
-@interface ForgotPasswordViewController : UIViewController
+@interface ForgotPasswordViewController : UIViewController<DataManagerDelegateProtocal>{
+    IBOutlet UITextField *email;
+    IBOutlet UILabel *errorMessage;
+}
+
+@property(nonatomic, strong)IBOutlet UITextField *email;
+@property(nonatomic, strong)IBOutlet UILabel *errorMessage;
+
+-(IBAction)recover:(id)sender;
+-(IBAction)cancel:(id)sender;
 
 @end

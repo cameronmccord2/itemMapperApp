@@ -1,15 +1,15 @@
 //
-//  LoginXIBViewController.h
+//  LoginViewController.h
 //  Item Mapper
 //
-//  Created by Taylor McCord on 9/3/13.
+//  Created by Taylor McCord on 9/4/13.
 //  Copyright (c) 2013 McCord Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "DataManager.h"
 
-@interface LoginXIBViewController : UIViewController <DataManagerDelegateProtocal>{
+@interface LoginViewController : UIViewController <DataManagerDelegateProtocal>{
     IBOutlet UITextField *email;
     IBOutlet UITextField *password;
     IBOutlet UILabel *errorMessage;
@@ -21,8 +21,8 @@
 
 -(IBAction)login:(id)sender;
 -(IBAction)cancel:(id)sender;
--(IBAction)newUser:(UIGestureRecognizer *)sender;
--(IBAction)forgotPassword:(UIGestureRecognizer *)sender;
+-(IBAction)newUser:(id)sender;
+-(IBAction)forgotPassword:(id)sender;
 
 
 @end

@@ -28,8 +28,7 @@
     
     MapViewController *mapViewController = [[MapViewController alloc] initWithNibName:nil bundle:nil];
     
-    MyItemsListViewController *myItemsListViewController = [[MyItemsListViewController alloc] initWithStyle:UITableViewStylePlain];
-    MyItemsNavViewController *myItemsNavViewController = [[MyItemsNavViewController alloc] initWithRootViewController:myItemsListViewController];
+    MyItemsNavViewController *myItemsNavViewController = [[MyItemsNavViewController alloc] initWithNothing];
     
     SettingsViewController *settingsViewController = [[SettingsViewController alloc] initWithNibName:nil bundle:nil];
     

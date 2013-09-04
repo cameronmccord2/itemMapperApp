@@ -1,24 +1,24 @@
 //
-//  LoginViewController.m
+//  AnswerSecretQuestionsViewController.m
 //  Item Mapper
 //
-//  Created by Cameron McCord on 8/23/13.
+//  Created by Taylor McCord on 9/4/13.
 //  Copyright (c) 2013 McCord Inc. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "AnswerSecretQuestionsViewController.h"
 
-@interface LoginViewController ()
+@interface AnswerSecretQuestionsViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation AnswerSecretQuestionsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
+        [[[UIApplication sharedApplication] keyWindow] addSubview:[self view]];
     }
     return self;
 }
@@ -26,13 +26,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)submit:(id)sender{
+    
+}
+
+-(IBAction)cancel:(id)sender{
+    
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "MainNavViewController.h"
+#import "MyItemsListViewController.h"
 
 @interface MainNavViewController ()
 
@@ -20,7 +21,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        MyItemsListViewController *myItemsListViewController = [[MyItemsListViewController alloc] initWithStyle:UITableViewStylePlain];
+        [[self view] addSubview:[myItemsListViewController view]];
     }
     return self;
 }

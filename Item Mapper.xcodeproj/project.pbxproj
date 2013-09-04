@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2133DBE317D645820010B90F /* LoginXIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2133DBE117D645820010B90F /* LoginXIBViewController.m */; };
-		2133DBE417D645820010B90F /* LoginXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2133DBE217D645820010B90F /* LoginXIBViewController.xib */; };
+		210C518E17D787840052C0DE /* AnswerSecretQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 210C518C17D787840052C0DE /* AnswerSecretQuestionsViewController.m */; };
+		210C518F17D787840052C0DE /* AnswerSecretQuestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210C518D17D787840052C0DE /* AnswerSecretQuestionsViewController.xib */; };
+		210C519317D79F3A0052C0DE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 210C519117D79F3A0052C0DE /* LoginViewController.m */; };
+		210C519417D79F3A0052C0DE /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210C519217D79F3A0052C0DE /* LoginViewController.xib */; };
+		210C519817D7A50E0052C0DE /* EditItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 210C519617D7A50E0052C0DE /* EditItemViewController.m */; };
+		210C519917D7A50E0052C0DE /* EditItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210C519717D7A50E0052C0DE /* EditItemViewController.xib */; };
+		210C519C17D7AFAE0052C0DE /* NewUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 210C519B17D7AFAE0052C0DE /* NewUser.m */; };
+		210C519F17D7B0530052C0DE /* SecretQuestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 210C519E17D7B0530052C0DE /* SecretQuestions.m */; };
 		2133DBE717D64D230010B90F /* ModalViewsControllerMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2133DBE617D64D230010B90F /* ModalViewsControllerMananger.m */; };
 		2133DBEB17D64DB60010B90F /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2133DBE917D64DB50010B90F /* ForgotPasswordViewController.m */; };
 		2133DBEC17D64DB60010B90F /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2133DBEA17D64DB50010B90F /* ForgotPasswordViewController.xib */; };
@@ -44,7 +50,6 @@
 		DC702BEC17C81CF600388E87 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = DC702BEB17C81CF600388E87 /* User.m */; };
 		DC702BEF17C81D4800388E87 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC702BEE17C81D4800388E87 /* UserManager.m */; };
 		DC702BF317C8239200388E87 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DC702BF217C8239200388E87 /* SFHFKeychainUtils.m */; };
-		DC702BF617C832EF00388E87 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC702BF517C832EF00388E87 /* LoginViewController.m */; };
 		DC702BF917C8350C00388E87 /* CallQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DC702BF817C8350C00388E87 /* CallQueue.m */; };
 		DC702BFB17C83BD400388E87 /* ClassAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DC702BFA17C83BD400388E87 /* ClassAdditions.m */; };
 		DC702BFD17C83CC700388E87 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC702BFC17C83CC700388E87 /* Security.framework */; };
@@ -63,9 +68,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2133DBE017D645820010B90F /* LoginXIBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginXIBViewController.h; path = "Item Mapper/LoginXIBViewController.h"; sourceTree = "<group>"; };
-		2133DBE117D645820010B90F /* LoginXIBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginXIBViewController.m; path = "Item Mapper/LoginXIBViewController.m"; sourceTree = "<group>"; };
-		2133DBE217D645820010B90F /* LoginXIBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginXIBViewController.xib; path = "Item Mapper/LoginXIBViewController.xib"; sourceTree = "<group>"; };
+		210C518B17D787840052C0DE /* AnswerSecretQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerSecretQuestionsViewController.h; sourceTree = "<group>"; };
+		210C518C17D787840052C0DE /* AnswerSecretQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerSecretQuestionsViewController.m; sourceTree = "<group>"; };
+		210C518D17D787840052C0DE /* AnswerSecretQuestionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerSecretQuestionsViewController.xib; sourceTree = "<group>"; };
+		210C519017D79F3A0052C0DE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		210C519117D79F3A0052C0DE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		210C519217D79F3A0052C0DE /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		210C519517D7A50E0052C0DE /* EditItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditItemViewController.h; sourceTree = "<group>"; };
+		210C519617D7A50E0052C0DE /* EditItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditItemViewController.m; sourceTree = "<group>"; };
+		210C519717D7A50E0052C0DE /* EditItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditItemViewController.xib; sourceTree = "<group>"; };
+		210C519A17D7AFAE0052C0DE /* NewUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUser.h; sourceTree = "<group>"; };
+		210C519B17D7AFAE0052C0DE /* NewUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUser.m; sourceTree = "<group>"; };
+		210C519D17D7B0530052C0DE /* SecretQuestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecretQuestions.h; sourceTree = "<group>"; };
+		210C519E17D7B0530052C0DE /* SecretQuestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecretQuestions.m; sourceTree = "<group>"; };
 		2133DBE517D64D230010B90F /* ModalViewsControllerMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModalViewsControllerMananger.h; path = "Item Mapper/ModalViewsControllerMananger.h"; sourceTree = "<group>"; };
 		2133DBE617D64D230010B90F /* ModalViewsControllerMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModalViewsControllerMananger.m; path = "Item Mapper/ModalViewsControllerMananger.m"; sourceTree = "<group>"; };
 		2133DBE817D64DB50010B90F /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForgotPasswordViewController.h; path = "Item Mapper/ForgotPasswordViewController.h"; sourceTree = "<group>"; };
@@ -118,8 +133,6 @@
 		DC702BEE17C81D4800388E87 /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserManager.m; path = "Item Mapper/UserManager.m"; sourceTree = "<group>"; };
 		DC702BF117C8239200388E87 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
 		DC702BF217C8239200388E87 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
-		DC702BF417C832EF00388E87 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = "Item Mapper/LoginViewController.h"; sourceTree = "<group>"; };
-		DC702BF517C832EF00388E87 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = "Item Mapper/LoginViewController.m"; sourceTree = "<group>"; };
 		DC702BF717C8350C00388E87 /* CallQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallQueue.h; path = "Item Mapper/CallQueue.h"; sourceTree = "<group>"; };
 		DC702BF817C8350C00388E87 /* CallQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallQueue.m; path = "Item Mapper/CallQueue.m"; sourceTree = "<group>"; };
 		DC702BFA17C83BD400388E87 /* ClassAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassAdditions.m; path = "Item Mapper/ClassAdditions.m"; sourceTree = "<group>"; };
@@ -251,17 +264,21 @@
 				21FFC21917C7F6F600AFFD92 /* SettingsViewController.m */,
 				21FFC22217C7FF0E00AFFD92 /* MyItemsNavViewController.h */,
 				21FFC22317C7FF0E00AFFD92 /* MyItemsNavViewController.m */,
-				DC702BF417C832EF00388E87 /* LoginViewController.h */,
-				DC702BF517C832EF00388E87 /* LoginViewController.m */,
-				2133DBE017D645820010B90F /* LoginXIBViewController.h */,
-				2133DBE117D645820010B90F /* LoginXIBViewController.m */,
-				2133DBE217D645820010B90F /* LoginXIBViewController.xib */,
 				2133DBE817D64DB50010B90F /* ForgotPasswordViewController.h */,
 				2133DBE917D64DB50010B90F /* ForgotPasswordViewController.m */,
 				2133DBEA17D64DB50010B90F /* ForgotPasswordViewController.xib */,
 				2133DBED17D64DC60010B90F /* NewUserViewController.h */,
 				2133DBEE17D64DC60010B90F /* NewUserViewController.m */,
 				2133DBEF17D64DC70010B90F /* NewUserViewController.xib */,
+				210C518B17D787840052C0DE /* AnswerSecretQuestionsViewController.h */,
+				210C518C17D787840052C0DE /* AnswerSecretQuestionsViewController.m */,
+				210C518D17D787840052C0DE /* AnswerSecretQuestionsViewController.xib */,
+				210C519017D79F3A0052C0DE /* LoginViewController.h */,
+				210C519117D79F3A0052C0DE /* LoginViewController.m */,
+				210C519217D79F3A0052C0DE /* LoginViewController.xib */,
+				210C519517D7A50E0052C0DE /* EditItemViewController.h */,
+				210C519617D7A50E0052C0DE /* EditItemViewController.m */,
+				210C519717D7A50E0052C0DE /* EditItemViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -297,6 +314,10 @@
 				DC702BEB17C81CF600388E87 /* User.m */,
 				DC702BF717C8350C00388E87 /* CallQueue.h */,
 				DC702BF817C8350C00388E87 /* CallQueue.m */,
+				210C519A17D7AFAE0052C0DE /* NewUser.h */,
+				210C519B17D7AFAE0052C0DE /* NewUser.m */,
+				210C519D17D7B0530052C0DE /* SecretQuestions.h */,
+				210C519E17D7B0530052C0DE /* SecretQuestions.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -402,9 +423,11 @@
 				21FFC21C17C7FAA900AFFD92 /* mapIcon.png in Resources */,
 				21FFC21F17C7FC2400AFFD92 /* settingsIcon.png in Resources */,
 				21FFC22117C7FC9900AFFD92 /* listIcon.png in Resources */,
-				2133DBE417D645820010B90F /* LoginXIBViewController.xib in Resources */,
 				2133DBEC17D64DB60010B90F /* ForgotPasswordViewController.xib in Resources */,
 				2133DBF117D64DC70010B90F /* NewUserViewController.xib in Resources */,
+				210C518F17D787840052C0DE /* AnswerSecretQuestionsViewController.xib in Resources */,
+				210C519417D79F3A0052C0DE /* LoginViewController.xib in Resources */,
+				210C519917D7A50E0052C0DE /* EditItemViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,15 +475,18 @@
 				DC702BEC17C81CF600388E87 /* User.m in Sources */,
 				DC702BEF17C81D4800388E87 /* UserManager.m in Sources */,
 				DC702BF317C8239200388E87 /* SFHFKeychainUtils.m in Sources */,
-				DC702BF617C832EF00388E87 /* LoginViewController.m in Sources */,
 				DC702BF917C8350C00388E87 /* CallQueue.m in Sources */,
 				DC702BFB17C83BD400388E87 /* ClassAdditions.m in Sources */,
 				DC702C0017C845E100388E87 /* NSURLConnectionWithTag.m in Sources */,
 				DC702C0417C870AC00388E87 /* Location.m in Sources */,
-				2133DBE317D645820010B90F /* LoginXIBViewController.m in Sources */,
 				2133DBE717D64D230010B90F /* ModalViewsControllerMananger.m in Sources */,
 				2133DBEB17D64DB60010B90F /* ForgotPasswordViewController.m in Sources */,
 				2133DBF017D64DC70010B90F /* NewUserViewController.m in Sources */,
+				210C518E17D787840052C0DE /* AnswerSecretQuestionsViewController.m in Sources */,
+				210C519317D79F3A0052C0DE /* LoginViewController.m in Sources */,
+				210C519817D7A50E0052C0DE /* EditItemViewController.m in Sources */,
+				210C519C17D7AFAE0052C0DE /* NewUser.m in Sources */,
+				210C519F17D7B0530052C0DE /* SecretQuestions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

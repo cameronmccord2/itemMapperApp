@@ -15,9 +15,8 @@
 
 @implementation MyItemsNavViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+- (id)initWithNothing{
+    self = [super initWithNibName:nil bundle:nil];
     if (self) {
         UIImage *listIcon = [UIImage imageNamed:@"listIcon.png"];
         UITabBarItem *listItem = [[UITabBarItem alloc] initWithTitle:@"My Items" image:listIcon tag:0];

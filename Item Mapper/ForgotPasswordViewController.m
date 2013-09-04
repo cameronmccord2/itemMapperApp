@@ -14,11 +14,13 @@
 
 @implementation ForgotPasswordViewController
 
+@synthesize errorMessage;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        [[[UIApplication sharedApplication] keyWindow] addSubview:[self view]];
     }
     return self;
 }
@@ -33,6 +35,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)recover:(id)sender{
+    [[DataManager sharedManager] getSecretQuestions:email.text delegate:self];
+}
+
+-(IBAction)cancel:(id)sender{
+    [[self view] removeFromSuperview];
+}
+
+-(void)requestedSecretQuestions:(NSArray *)secretQuestions{
+    
 }
 
 @end

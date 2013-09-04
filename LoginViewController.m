@@ -1,23 +1,19 @@
 //
-//  LoginXIBViewController.m
+//  LoginViewController.m
 //  Item Mapper
 //
-//  Created by Taylor McCord on 9/3/13.
+//  Created by Taylor McCord on 9/4/13.
 //  Copyright (c) 2013 McCord Inc. All rights reserved.
 //
 
-#import "LoginXIBViewController.h"
+#import "LoginViewController.h"
 #import "ModalViewsControllerMananger.h"
 
-@interface LoginXIBViewController ()
+@interface LoginViewController ()
 
 @end
 
-@implementation LoginXIBViewController
-
-@synthesize errorMessage;
-@synthesize password;
-@synthesize email;
+@implementation LoginViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

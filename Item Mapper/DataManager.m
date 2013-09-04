@@ -63,6 +63,33 @@ NSNumber *typeMyItems, *typeDoesItemExist, *typeAuthenticate;
     [self doFetch];
 }
 
+#pragma mark Item stuff
+-(void)saveChangesForItem:(Item *)item delegate:(id)delegate{
+    
+}
+
+-(void)deleteItem:(Item *)item delegate:(id)delegate{
+    
+}
+
+-(void)getMyItems:(id)delegate{
+    
+}
+
+#pragma mark Secret questions stuff
+-(void)getSecretQuestions:(NSString *)email delegate:(id)delegate{
+    
+}
+
+-(void)submitSecretAnswers:(NSArray *)answers delegate:(id)delegate{
+    
+}
+
+#pragma mark User stuff
+-(void)submitNewUserWithfirstName:(NSString *)firstName lastName:(NSString *)lastName email:(NSString *)email password1:(NSString *)password1 password2:(NSString *)password2 secretQuestion1:(NSString *)secretQuestion1 secretAnswer1:(NSString *)secretAnswer1 secretQuestion2:(NSString *)secretQuestion2 secretAnswer2:(NSString *)secretAnswer2 secretQuestion3:(NSString *)secretQuestion3 secretAnswer3:(NSString *)secretAnswer3 delegate:(id)delegate{
+    
+}
+
 #pragma internal Functions
 -(void)doFetch{
     if ([[UserManager sharedManager] hasToken]) {
@@ -148,7 +175,7 @@ NSNumber *typeMyItems, *typeDoesItemExist, *typeAuthenticate;
 }
 
 -(void)connection:(NSURLConnectionWithTag *)conn didFailWithError:(NSError *)error{
-    if (conn.typeTag isEqualToNumber:typeAuthenticate) {
+    if ([conn.typeTag isEqualToNumber:typeAuthenticate]) {
         conn.
     }
     NSString *errorString = [NSString stringWithFormat:@"Fetch  failed for url: %@, error: %@", conn.originalRequest.URL.absoluteString, [error localizedDescription]];

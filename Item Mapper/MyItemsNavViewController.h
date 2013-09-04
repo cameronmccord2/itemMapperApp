@@ -10,4 +10,6 @@
 
 @interface MyItemsNavViewController : UINavigationController
 
+- (id)initWithNothing;
+
 @end
